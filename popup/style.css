@@ -8,6 +8,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: .8px;
     padding: 10px;
     text-align: center;
     min-height: 60px;
@@ -79,13 +81,6 @@ label {
     padding: 5px 0px;
 }
 
-.btn-color-mode-switch > .alert{
-    display: none;
-    background: #FF9800;
-    border: none;
-    color: #fff;
-}
-
 .btn-color-mode-switch input[type="checkbox"]{
     cursor: pointer;
     width: 50px;
@@ -115,13 +110,15 @@ label {
 }
 
 .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner{
-    /*background: #66BB6A; */
-    /*color: #fff;*/
+    background: #423379;
+    color: #fff;
 }
 
-.btn-color-mode-switch input[type="checkbox"]:checked ~ .alert{
-    display: block;
+.btn-color-mode-switch input[type="checkbox"] + label.btn-color-mode-switch-inner{
+    background: #FF9800;
+    color: #000000;
 }
+
 
 /*mode preview*/
 .dark-mode{
@@ -131,13 +128,5 @@ label {
 
 .light-mode{
     background: #fff;
-    color: #000;
-}
-
-.dark-mode p.by a{
-    color: #777;
-}
-
-.light-mode p.by a{
     color: #000;
 }

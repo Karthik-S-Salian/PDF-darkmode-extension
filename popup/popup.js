@@ -2,7 +2,11 @@ const toggleButton=document.querySelector(".btn-color-mode-switch input[type='ch
 
 chrome.storage.local.get('pdf-mode', function(mode) {
     if (mode)
-        toggleButton.checked=(mode['pdf-mode']==="dark")?true:false;
+    {
+        const state = mode['pdf-mode']
+        toggleButton.checked=(state==="dark")?true:false;
+        document.body.className=`${state}-mode`;
+    }
   });
 
 toggleButton.addEventListener('change', function() {

@@ -3,9 +3,11 @@
     "name": "My Extension",
     "version": "1.0",
     "icons": {
-        "16": "icons/icons8-pdf-pulsar-color-16.png",
-        "32": "icons/icons8-pdf-pulsar-color-32.png",
-        "96": "icons/icons8-pdf-pulsar-color-96.png"
+        "16": "icons/pdf.png",
+        "24": "icons/pdf (1).png",
+        "32": "icons/pdf (2).png",
+        "64": "icons/pdf (3).png",
+        "128": "icons/pdf (4).png"
     },
 
     "action": {

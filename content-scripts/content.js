@@ -1,5 +1,11 @@
 let cover = document.createElement("div"); 
 
+chrome.storage.local.get('pdf-mode', function(mode) {
+    if (mode)
+        if (mode['pdf-mode']==="dark")
+            document.body.appendChild(cover);
+  });
+
 let css = ` 
     position: fixed; 
     pointer-events: none; 
@@ -38,6 +44,6 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
         }
     }
 
-    sendResponse({ fromcontent: "This message is from content.js" });
+    sendResponse({ fromcontent: "all set" });
 });
 
