@@ -1,6 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "My Extension",
+    "name": "PDF DARKMODE",
+    "description":"Switch between dark and light mode with one click; Currently available only for PDF",
     "version": "1.0",
     "icons": {
         "16": "icons/pdf.png",

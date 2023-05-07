@@ -1,10 +1,11 @@
-html, body{
+html,
+body {
     padding: 0%;
     margin: 0px;
     border-radius: 9px;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,13 +20,13 @@ body{
 
 /*switch styles*/
 
-#toogle-btn-container{
+#toogle-btn-container {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
 }
 
-#toogle-btn-container i{
+#toogle-btn-container i {
     display: inline-block;
     position: relative;
     top: -9px;
@@ -37,13 +38,13 @@ label {
     font-weight: 500;
 }
 
-.btn-color-mode-switch{
+.btn-color-mode-switch {
     display: inline-block;
     margin: 0px;
     position: relative;
 }
 
-.btn-color-mode-switch > label.btn-color-mode-switch-inner{
+.btn-color-mode-switch>label.btn-color-mode-switch-inner {
     margin: 0px;
     width: 140px;
     height: 30px;
@@ -56,17 +57,17 @@ label {
     display: block;
 }
 
-.btn-color-mode-switch > label.btn-color-mode-switch-inner:before{
+.btn-color-mode-switch>label.btn-color-mode-switch-inner:before {
     content: attr(data-on);
     position: absolute;
     font-size: 12px;
     font-weight: 500;
     top: 7px;
     right: 20px;
-
+    cursor: pointer;
 }
 
-.btn-color-mode-switch > label.btn-color-mode-switch-inner:after{
+.btn-color-mode-switch>label.btn-color-mode-switch-inner:after {
     content: attr(data-off);
     width: 70px;
     height: 16px;
@@ -81,7 +82,7 @@ label {
     padding: 5px 0px;
 }
 
-.btn-color-mode-switch input[type="checkbox"]{
+.btn-color-mode-switch input[type="checkbox"] {
     cursor: pointer;
     width: 50px;
     height: 25px;
@@ -92,41 +93,41 @@ label {
     margin: 0px;
 }
 
-.btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner{
+.btn-color-mode-switch input[type="checkbox"]:checked+label.btn-color-mode-switch-inner {
     background: #151515;
     color: #fff;
 }
 
-.btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:after{
+.btn-color-mode-switch input[type="checkbox"]:checked+label.btn-color-mode-switch-inner:after {
     content: attr(data-on);
     left: 68px;
     background: #3c3c3c;
 }
 
-.btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:before{
+.btn-color-mode-switch input[type="checkbox"]:checked+label.btn-color-mode-switch-inner:before {
     content: attr(data-off);
     right: auto;
     left: 20px;
 }
 
-.btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner{
+.btn-color-mode-switch input[type="checkbox"]:checked+label.btn-color-mode-switch-inner {
     background: #423379;
     color: #fff;
 }
 
-.btn-color-mode-switch input[type="checkbox"] + label.btn-color-mode-switch-inner{
+.btn-color-mode-switch input[type="checkbox"]+label.btn-color-mode-switch-inner {
     background: #FF9800;
     color: #000000;
 }
 
 
 /*mode preview*/
-.dark-mode{
+.dark-mode {
     background: #0d0d0d;
     color: white;
 }
 
-.light-mode{
+.light-mode {
     background: #fff;
     color: #000;
 }

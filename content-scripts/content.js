@@ -18,17 +18,11 @@ let css = `
     z-index: 1; 
 ` ;
 
+
+//document.documentElement.style.filter="invert(100%)";
+
 cover.setAttribute("style", css);
 cover.setAttribute("id","dark-mask");
-
-
-chrome.storage.local.get('pdf-mode', function(mode) {
-    if (mode==="dark")
-    {
-        document.body.appendChild(cover);
-    }
-  });
-
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
@@ -46,4 +40,3 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
     sendResponse({ fromcontent: "all set" });
 });
-
